@@ -13,11 +13,34 @@
 </head>
 <body>
     <h1>DOM</h1>
-    <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong></p>
-    <div>Clique em mim</div>
+    <p name="porNome">Aqui vai o resultado</p>
+    <p class="porClasse">Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="idClique">Clique em mim</div>
     <script>
-        window.document.write(window.navigator.appName)
-    </script>
+        //Métodos de acesso por árvore DOM
+        
+        //---Por Marca---
+        var paragrafo1 = window.document.getElementsByTagName('p')[1]
+        // window.document.write('No primeiro parágrafo está escrito assim: ' + paragrafo1.innerText)
+        // paragrafo1.style.backgroundColor = 'white'
+       
+        //---Por ID---
+        var div1= window.document.getElementById('idClique')
+        div1.style.color = 'red'
+        // div1.innerText = 'Aoooba!'
+
+        //---Por Nome---
+        var d = window.document.getElementsByName('porNome')[0]
+        d.style.backgroundColor = 'purple'
+
+        //---Por classe---
+        var e = window.document.getElementsByClassName('porClasse')[0]
+        e.style.color =  'brown'
+
+        //---Por seletor---
+        var f = window.document.querySelector('p.porClasse')
+        f.style.backgroundColor = 'blue'
+        // window.document.write(f.innerHTML)
+        </script>
 </body>
 </html>
