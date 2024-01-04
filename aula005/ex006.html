@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area, div#areaJS {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+            background-color: rgb(1, 165, 1);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos por <HTML></HTML></h1>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <h1>Eventos por JS</h1>
+    <div id="areaJS">
+        Interaja...
+    </div>
+
+    <script>
+        // Por JS
+        var a = document.getElementById('areaJS')
+        a.addEventListener('click', clicarJS)
+        a.addEventListener('mouseenter', entrarJS)
+        a.addEventListener('mouseout', sairJS)
+        function clicarJS(){
+            a.innerText = 'Clicou!'
+            a.style.backgroundColor = 'red'
+        }
+        function entrarJS(){
+            // var area = document.getElementById('area')
+            a.innerText = 'Entrou!'
+            a.style.backgroundColor = 'purple'
+        }
+        function sairJS(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'green'
+        }
+
+        // Por html
+        var area = document.getElementById('area')
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor = 'red'
+        }
+        function entrar(){
+            // var area = document.getElementById('area')
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor = 'purple'
+        }
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+</html>
