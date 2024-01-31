@@ -8,6 +8,7 @@ body{
 }
 header {
     text-align: center;
+    color: #ffffff;
 
 }
 section {
@@ -26,8 +27,10 @@ section {
 }
 div {
     text-align: center;
+    padding: 8px;
 }
 
 footer {
     text-align: center;
+    color: #ffffff;
 }
