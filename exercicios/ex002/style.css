@@ -1,33 +1,43 @@
 @charset "UTF-8";
 
-body{
-    background-color:lightblue ;
+body {
+    background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 1.1em;
 }
+
 header {
     text-align: center;
 
 }
+
 section {
     width: 500px;
-    height: 180px;
     background-color: #ffffff;
-    /* display: flex; */
     border-radius: 10px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.402);
     padding: 15px;
     margin: auto;
-    /* flex-direction: column; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
 
 }
+
 div {
     text-align: center;
 }
 
 footer {
     text-align: center;
+}
+
+#idResultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
 }
