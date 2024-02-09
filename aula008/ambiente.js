@@ -11,3 +11,10 @@ do {
     j++
     console.log(`Passo ${j}`)
 } while (j < 6);
+console.log('------')
+
+//Repetição com variável de controle
+// Inicialização, teste lógico e incremento
+for(var ini = 0; ini < 10; ini++){
+    console.log(`Passo var ini ${ini}`)
+}
