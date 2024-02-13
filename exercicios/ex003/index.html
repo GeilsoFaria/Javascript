@@ -9,19 +9,19 @@
 
 <body>
     <header>
-        <h1>Vamos contar</h1>
+        <h1>Vamos contar !</h1>
     </header>
     <section>
         <div id="idFormulario">
             <form action="" method="get">
                 <p>
-                    <label for="inicio">Inicio</label> <input type="number" name="nomeInicio" id="inicio"  required>
+                    <label for="inicio">Início</label> <input type="number" name="nomeInicio" id="inicio" required>
                 </p>
                 <p>
-                    <label for="fim">Fim</label> <input type="number" name="nomeFim" id="fim" >
+                    <label for="fim">Fim</label> <input type="number" name="nomeFim" id="fim" required>
                 </p>
                 <p>
-                    <label for="passo">Passo</label> <input type="number" name="nomePasso" id="passo" min="1">
+                    <label for="passo">Passo</label> <input type="number" name="nomePasso" id="passo" required >
                 </p>
                 <p>
                     <input type="button" value="Contar" onclick="contar()">
@@ -30,7 +30,10 @@
         </div>
         <div id="idResposta">
             Preparando a contagem...
-        </div >
+        </div>
+        <!-- <div id="idAviso" style="font-size: 0.65em; font-weight: bold;">
+            *Apenas contagem crescente
+        </div > -->
             
         
     </section>
