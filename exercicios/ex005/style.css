@@ -25,7 +25,9 @@ div {
     text-align: left;
     padding: 8px;
 }
-
+#selTab {
+    width: 150px;
+}
 footer {
     text-align: center;
     color: #ffffff;
